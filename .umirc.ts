@@ -1,4 +1,5 @@
 import { defineConfig } from 'dumi';
+const repo = 'shaolongzhang.github.io';
 export default defineConfig({
   title: '张哈哈技术大杂铺',
   mode: 'site',
@@ -26,7 +27,7 @@ export default defineConfig({
     },
   ],
   links: [{ rel: 'icon', href: 'favicon.ico' }],
-  base: '/',
-  publicPath: '/',
+  base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
   exportStatic: {},
 });
