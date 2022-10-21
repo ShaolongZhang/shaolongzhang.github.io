@@ -26,4 +26,7 @@ export default defineConfig({
     },
   ],
   links: [{ rel: 'icon', href: 'favicon.ico' }],
+  base: '/',
+  publicPath: '/',
+  exportStatic: {},
 });
