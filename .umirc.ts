@@ -27,7 +27,7 @@ export default defineConfig({
     },
   ],
   links: [{ rel: 'icon', href: 'favicon.ico' }],
-  base: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
-  publicPath: process.env.NODE_ENV === 'production' ? `/${repo}/` : '/',
+  base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   exportStatic: {},
 });
